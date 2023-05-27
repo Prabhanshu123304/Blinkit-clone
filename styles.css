@@ -108,9 +108,10 @@ main{
 
 .img-grid{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(10,10fr);
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: center;
+    align-items: center;
 }
 
 .img-grid>img{
@@ -181,4 +182,109 @@ padding: 30px ;
 }
 footer>.fa-solid{
     color: #ff0000;
+}
+
+
+@media screen and (max-width:1000px){
+    .logo{
+        width: 10%;
+    }
+    .logo>svg{
+        width: 70px;
+    }
+    .delivery-update{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+    .delivery-update>span{
+        font-weight: 200;
+        font-size: 10px;
+    }
+    
+    
+    .search-bar{
+        width: 40%;
+    }
+    .search-bar>input{
+        width: 100%;
+        padding: 15px 25px;
+        font-size: 12px;
+        background-color: #e3e2e2;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        color: #000;
+    }
+    
+    .buttons-access{
+        width: 30%;
+        padding: 0 50px;
+        display: flex;
+        justify-content:space-between;
+    }
+    .buttons-access>button{
+        padding: 10px 15px;
+        font-size: 10px;
+        font-weight: bold;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+    }
+    
+}
+
+@media screen and (max-width:700px){
+    .logo{
+        width: 20%;
+        float: left;
+    }
+    .logo>svg{
+        width: 70px;
+    }
+    .delivery-update{
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        font-weight: bolder;
+        font-size: 12px;
+    }
+    .delivery-update>span{
+        font-weight: 200;
+        font-size: 10px;
+    }
+    
+    
+    .search-bar{
+        width: 40%;
+    }
+    .search-bar>input{
+        width: 100%;
+        padding: 15px 10px;
+        font-size: 10px;
+        background-color: #e3e2e2;
+        border: none;
+        outline: none;
+        border-radius: 15px;
+        color: #000;
+    }
+    
+    .buttons-access{
+        width: 20%;
+        padding: 0 20px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        background-color: #c7e7c7;
+    }
+    .buttons-access>button{
+        border-bottom: 1px solid #ccc;
+        color: #000;
+        background-color: #c7e7c7;
+        width: 100px;
+        border-radius: 0;
+    }
+    
 }
